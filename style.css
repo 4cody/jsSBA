@@ -1,11 +1,50 @@
+:root {
+  --green: #002a29;
+  --teal: #007a79;
+  --accent: #c7cedf;
+  --offwhite: #d4d4dd;
+  --light: #976f4f;
+  --dark: #4d2a16;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
 }
 
-#logo {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
+ul {
+  list-style-type: none;
+}
+
+/* .main-silo {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+} */
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--teal);
+  height: 200px;
+  border-style: none;
+}
+
+footer input[type="submit"]:hover {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+footer h5 {
+  font-size: 1.4em;
 }

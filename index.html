@@ -5,39 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cedar Drone</title>
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="assets/drone_vec_1.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom style sheet -->
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <!-- gsap CDN
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
+    <!-- custome JS -->
     <script defer src="js.js"></script>
+
+    <style>
+
+        
+        main {
+            height: 100vh;
+            background: url(/assets/drone_hero.jpg) center center no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .header-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        .header-inner {
+            z-index: 5;
+            display: grid;
+            place-content: center;
+            width: 1200px;
+            height: 100%;
+            margin: auto;
+        }
+
+        .header-content {
+            z-index: 10;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 900px;
+            height: 450px;
+        }
+
+        .header-left,
+        .header-right {
+            flex: 1;
+        }
+
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .header-left button {
+            padding: 10px;
+            border-radius: 6px;
+            border-style: none;
+        }
+
+        .header-left button:hover {
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+
+        .header-left button a {
+            color: black;
+        }
+
+        .hero-copy {
+            font-size: 3em;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-form > input {
+            padding: 7px;
+            margin-bottom: 15px;
+            text-align: center;
+            border-radius: 6px;
+            border-style: none;
+        }
+
+    </style>
 </head>
 <body>
 
 
-    <header></header>
+    <main>
+        <div class="header-overlay"></div>
+        <div class="header-inner">
+            <section class="header-content">
+                <div class="header-left">
+                    <h1 class="hero-copy">Cedar Drone</h1>
+                    <button><a href="/home.html">Proceed as guest</a></button>
+                </div>
 
-    <section class="main">
 
-        <table>
-            <tbody>
 
-                <tr>
-                    <td>What is Cedar Drone?</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt dolore a, repellendus sit quae labore tempore unde facilis tempora facere, iusto maxime, sed in! Beatae quae culpa illo debitis!</td>
-                </tr>
+                <div class="header-right">
+                    <form class="login-form">
+                        <input class="login-input" type="email" placeholder="Email">
+                        <input class="login-input" type="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
 
-                <tr>
-                    <td>Whos is Cedar Drone for?</td>
-                    <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quis quibusdam numquam qui quaerat officia dolor non reprehenderit culpa facere, facilis sequi distinctio voluptates molestias in impedit nihil quisquam corporis?</td>
-                </tr>
-
-                <tr>
-                    <td>What will you find here?</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloremque perspiciatis soluta dicta voluptas qui suscipit unde magni dolore quisquam sint, adipisci autem iusto rem! Praesentium ut dolore provident et!</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </section>
-
+            </section>
+        </div>
+    </main>
     
 </body>
 </html>

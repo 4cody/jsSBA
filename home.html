@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedar Drone</title>
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="assets/drone_vec_1.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- gsap CDN
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
+    <!-- custome JS -->
+    <script defer src="js.js"></script>
+
+
+    <style>
+
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .quote-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+            background-color: var(--light);
+        }
+
+        .quote span {
+            color: var(--dark)
+        }
+
+        .landing-table {
+            border-spacing: 40px;
+        }
+
+        .landing-table-content tr {
+            height: 500px;
+            display: flex;
+            margin-top: 100px;
+            margin-bottom: 150px;
+        }
+
+        .landing-table-content tr td,
+        .landing-table-content tr th {
+            flex: 1;
+            padding: 18px;
+        }
+
+        .landing-table-content tr {
+            border-bottom: 3px solid var(--dark);
+        }
+
+        td {
+            display: grid;
+            place-content: center;
+        }
+
+        video {
+            width: 100%;
+            margin-top: 12px;
+        }
+
+    </style>
+
+
+</head>
+<body style="background-color: var(--offwhite);">
+<!-- 
+<nav class="header-nav">
+    <ul class="header-nav-list">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+    </ul>
+</nav>  -->
+
+
+
+<main class="main">
+    <div class="quote-container">
+        <pre class="quote">
+            <span style="font-weight: 500;">“If you were born without wings, do nothing to prevent them from growing.”</span>
+                ― Coco Chanel
+        </pre>
+    </div>
+
+
+    <table class="landing-table">
+        <tbody class="landing-table-content">
+
+            <tr>
+                <td style="margin-right: 18px;">This is a web site for all things drone.  Quad-copters, drones, and other flavors of unmanned vehicles are what we're about. </td>
+                <th style="margin-left: 18px; border-left: 3px solid var(--dark)">
+                    What is Cedar Drone?
+                    <video src="assets/video.mp4" autoplay loop muted></video>
+                </th>
+            </tr>
+
+            <tr>
+                <th style="margin-right: 18px; border-right: 3px solid var(--dark)">
+                    Whos is Cedar Drone for?
+                    <video src="assets/video_2.mp4" autoplay loop muted></video>
+                </th>
+                <td style="margin-left: 18px;">Drone enthusiasts, hobbiests, the common observer, those who are looking to get invovled or connected with a community.  The only people not allowed around here.. are penguins.</td>
+            </tr>
+
+            <tr>
+                <td style="margin-right: 18px;">A group of like minded people to form friendships with.  We also faciltate the organization of meetups and races.  There is a place for users to post about their projects, events, and experiences as it relates to drones.</td>
+                <th style="margin-left: 18px; border-left: 3px solid var(--dark);">
+                    What will you find here?
+                    <video src="assets/video_3.mp4" autoplay loop muted></video>
+                </th>
+            </tr>
+
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <form>
+        <input type="email">
+        <input type="submit" value="Join our e-mailing list!">
+    </form>
+
+    <h5>
+        Take our
+        <a href="/survey.html">
+            Survey
+        </a>
+    </h5>
+
+</footer>
+
+</body>
+</html>
